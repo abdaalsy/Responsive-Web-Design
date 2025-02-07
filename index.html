@@ -5,50 +5,52 @@
         <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
-        <h1 id="title">ASCIIGATE Volunteer form</h1>
-        <p id="description">
-            We need <strong>YOU</strong>! From humble beginnings converting images to text, ASCIIGEN Inc. has made the jump from the intangible to the tangible.
-            We are looking for one person who's life has been positively impacted by the work of ASCIIGEN Inc., to take the honour of being the first human being
-            converted into text! The form below contains some info that we'll require. But don't worry about that, focus on the glory! The whole world will 
-            remember your bravery for volunteering to take the first step into a new world, a world withou
-        </p>
-        <form id="survey-form">
-            <fieldset>
-                <legend>Contact Information</legend>
-                <label id="name-label" for="name">Full name: <input required id="name" type="text" placeholder="Enter your name here" /></label>
-                <label id="email-label" for="email"> Email: <input required id="email" type="email" placeholder="Enter your email here" /></label>
-                <label id="number-label" for="number"> Phone: <input id="number" type="number" min="1000000000" max="9999999999" placeholder="10 Digits" /></label>
-            </fieldset>
-            <fieldset>
-                <legend>Education</legend>
-                <p>Select all that apply: </p>
-                <label for="diploma"><input required id="diploma" type="checkbox" value="diploma"> High school Diploma</label>
-                <label for="college"><input id="college" type="checkbox" value="college"> College Degree</label>
-                <label for="first-yr"><input id="first-yr" type="checkbox" value="first-yr" /> Undergraduate 1st Year</label>
-                <label for="third-yr"><input id="third-yr" type="checkbox" value="third-yr" /> Undergraduate 3+ Years</label>
-                <label for="undergrad"><input id="undergrad" type="checkbox" value="undergrad" /> Undergraduate Degree</label>
-                <label for="grad"><input id="grad" type="checkbox" value="grad" /> Graduate Degree</label>
-            </fieldset>
-            <fieldset>
-                <legend>Visual Preferences</legend>
-                <label for="dropdown">Conversion style:
-                    <select id="dropdown">
-                        <option>Legacy</option>
-                        <option>Modern</option>
-                        <option>Ascii3D&trade;</option>
-                    </select>
+        <div id="container">
+            <h1 id="title">ASCIIGATE Volunteer form</h1>
+            <p id="description">
+                We need <strong>YOU</strong>! From humble beginnings converting images to text, ASCIIGEN Inc. has made the jump from the intangible to the tangible.
+                We are looking for one person who's life has been positively impacted by the work of ASCIIGEN Inc., to take the honour of being the first human being
+                converted into text! The form below contains some info that we'll require. But don't worry about that, focus on the glory! The whole world will 
+                remember your bravery for volunteering to take the first step into a new world, a world withou
+            </p>
+            <form id="survey-form">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label id="name-label" for="name">Full name: <input required id="name" type="text" placeholder="Enter your name here" /></label>
+                    <label id="email-label" for="email"> Email: <input required id="email" type="email" placeholder="Enter your email here" /></label>
+                    <label id="number-label" for="number"> Phone: <input id="number" type="number" min="1000000000" max="9999999999" placeholder="10 Digits" /></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Education</legend>
+                    <p>Select all that apply: </p>
+                    <label for="diploma"><input required id="diploma" type="checkbox" value="diploma"> High school Diploma</label>
+                    <label for="college"><input id="college" type="checkbox" value="college"> College Degree</label>
+                    <label for="first-yr"><input id="first-yr" type="checkbox" value="first-yr" /> Undergraduate 1st Year</label>
+                    <label for="third-yr"><input id="third-yr" type="checkbox" value="third-yr" /> Undergraduate 3+ Years</label>
+                    <label for="undergrad"><input id="undergrad" type="checkbox" value="undergrad" /> Undergraduate Degree</label>
+                    <label for="grad"><input id="grad" type="checkbox" value="grad" /> Graduate Degree</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Visual Preferences</legend>
+                    <label for="dropdown">Conversion style:
+                        <select id="dropdown">
+                            <option>Legacy</option>
+                            <option>Modern</option>
+                            <option>Ascii3D&trade;</option>
+                        </select>
+                    </label>
+                    <label for="dark"><input checked id="dark" name="dark-light" type="radio" value="dark"/> Dark characters</label>
+                    <label for="light"><input id="light" name="dark-light" type="radio" value="light"> Light characters</label>
+                </fieldset>
+                <label class="block" for="justification">How has ASCIIGEN technology benefitted you, your friends, or your family?
+                    <textarea class="block" required id="justification" name="justification" rows="5", cols="50"></textarea>
                 </label>
-                <label for="dark"><input checked id="dark" name="dark-light" type="radio" value="dark"/> Dark characters</label>
-                <label for="light"><input id="light" name="dark-light" type="radio" value="light"> Light characters</label>
-            </fieldset>
-            <label for="justification">How has ASCIIGEN technology benefitted you, your friends, or your family?
-                <textarea required id="justification" name="justification" rows="5", cols="50"></textarea>
-            </label>
-            <label for="transfer">
-                I transfer all rights over my body to ASCIIGEN Inc. to do with as they see fit with no expiration date.
-                <input required checked id="transfer" type="checkbox" value="transfer">
-            </label>
-            <input id="submit" type="submit" value="submit">
-        </form>
+                <label for="transfer">
+                    I transfer all rights over my body to ASCIIGEN Inc. to do with as they see fit with no expiration date.
+                    <input required checked id="transfer" type="checkbox" value="transfer">
+                </label>
+                <input class="block" id="submit" type="submit" value="submit">
+            </form>
+        </div>
     </body>
 </html>
