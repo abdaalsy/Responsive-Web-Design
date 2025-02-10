@@ -1,0 +1,45 @@
+body {
+    font-family: Tahoma;
+    color: wheat;
+    background-color: #221e22;
+    text-align: center;
+    margin-inline: 0;
+}
+
+#image  {
+    max-width: 100%;
+    width: min(80%, 500px);
+    height: auto;
+    margin: auto;
+    display: block;
+}
+
+#title {
+    background-color: #31263e;
+    padding: 50px;
+    margin-bottom: 0;
+}
+
+#description {
+    background-color: #31263e;
+    font-style: italic;
+    font-size: 12px;
+    color: rgb(133, 120, 96);
+    margin-top: 0;
+    padding-bottom: 50px;
+}
+
+#img-caption {
+    font-style: italic;
+    font-size: 12px;
+    color: rgb(133, 120, 96);
+    margin-top: 5px;
+}
+
+#img-div > img {
+    filter:brightness(0.7)
+}
+
+#img-div {
+    padding: 50px;
+}
