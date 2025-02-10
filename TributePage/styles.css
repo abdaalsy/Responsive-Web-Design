@@ -43,3 +43,13 @@ body {
 #img-div {
     padding: 50px;
 }
+
+#tribute-info {
+    font-size: 12px;
+    padding: 50px 20%;
+    background-color: #31263e;
+}
+
+p {
+    font-size: 12px;
+}
